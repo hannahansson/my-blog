@@ -3,6 +3,8 @@ import { useState, useEffect, useRef } from "react";
 import { BlogPosts } from "./BlogPosts";
 import { v4 as uuidv4 } from "uuid";
 import  "./MyBlog.css";
+import { BlogList } from "./BlogList";
+import './blog.css';
 
 
 const LOCAL_STORAGE_KEY = "myBlog.posts";
@@ -19,6 +21,7 @@ export const MyBlog  = () => {
     const titleRef = useRef();
     const contentRef = useRef();
     const authorRef = useRef();
+
 
     useEffect(() => {
         const storedPosts = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
@@ -51,11 +54,12 @@ export const MyBlog  = () => {
 
     console.log(blog)
 
+    console.log(posts)
    
     }
     return(
         <>
-        <BlogPosts posts={posts}/>
+        <BlogList posts={posts} />
         <div className="container">
     <div className="create-post">
         <h2>Add a new Post </h2>
