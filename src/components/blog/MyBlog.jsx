@@ -32,6 +32,9 @@ export const MyBlog  = () => {
         localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(posts));
       }, [posts]);
 
+        const handleDelete = (id) =>
+        setPosts((posts) => posts.filter((post) => post.id !== id));
+    
     const handleSubmit = (e) => {
         //prevents from refreshing the page
     e.preventDefault();
@@ -53,13 +56,12 @@ export const MyBlog  = () => {
     const blog = {title, content, author};
 
     console.log(blog)
-
     console.log(posts)
    
     }
     return(
         <>
-        <BlogList posts={posts} />
+        <BlogList posts={posts} handleDelete={handleDelete} />
         <div className="container">
     <div className="create-post">
         <h2>Add a new Post </h2>
@@ -74,9 +76,6 @@ export const MyBlog  = () => {
         <option value="Unknown">Unknown</option>
     </select>
     <button>Add post</button>
-    <p>Output: {title}</p>
-    <p>{content}</p>
-    <p>{author}</p>
 </form>
     </div>
     </div>

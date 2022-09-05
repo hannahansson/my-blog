@@ -1,0 +1,6 @@
+.container-home{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+}

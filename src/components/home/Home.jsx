@@ -1,7 +1,10 @@
 import React from "react";
+import './home.css';
 
 export const Home = () => {
     return(
-        <div>Hello home</div>
+        <div className="container-home">
+          <h1>WELCOME TO MYBLOG</h1>
+        </div>
     )
 }

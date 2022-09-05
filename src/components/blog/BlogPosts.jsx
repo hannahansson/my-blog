@@ -6,9 +6,10 @@ import { BlogList } from "./BlogList";
 import { MyBlog} from "./MyBlog";
 
 export const BlogPosts = () => {
+
     return (
-        <div>
-        <MyBlog />
+        <div>       
+       <MyBlog />
         </div>
     )
   }

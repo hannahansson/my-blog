@@ -1,21 +1,20 @@
 *{
     font-family:Verdana, sans-serif;
 }
-.container{
+.container-blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 1rem;
     padding: 1rem;
-}/*
-.flex{
-    display: flex;
-    flex-flow: row wrap;
-    flex: 1;
-    justify-content: center;
-}*/
+}
 
 .blog-post{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 900px;
     border: 1px solid rgb(255, 209, 157);
     border-radius: 1rem;
     background: rgb(255,219,125);
@@ -52,7 +51,7 @@
     display: flex;
     justify-content: end;
 }
-button{
+.button{
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem;
