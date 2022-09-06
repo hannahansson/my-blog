@@ -34,13 +34,13 @@
     display: flex;
     justify-content: left;
     padding: 1rem;
-    font-size: 20px;
+    font-size: 17px;
     white-space:pre-line;
     letter-spacing: 0.6px;
     text-align: start;
 }
 .blog-post .author{
-    font-size: 18px;
+    font-size: 13px;
     display: flex;
     justify-content: end;
     margin: 0.7rem ;
@@ -58,6 +58,6 @@
     outline: none;
     border: 1px solid rgb(254, 235, 196) ;
     color: white;
-    background-color: orange;
+    background-color: #fac85d;;
     cursor: pointer;
 }

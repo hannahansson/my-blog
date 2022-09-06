@@ -4,6 +4,7 @@ import { BlogPosts } from "./BlogPosts";
 
 export const BlogContent = ({post, handleDelete}) =>{
         return (
+          <>
             <div className="flex">
             <div className="container-blog">
                 <div className="blog-post">
@@ -16,5 +17,6 @@ export const BlogContent = ({post, handleDelete}) =>{
                 </div>
 </div>
 </div>
+</>
         )
 }

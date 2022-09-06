@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home, BlogPosts, MyBlog, Navbar } from "./components";
+import { Home, BlogPosts, MyBlog, Navbar, BlogList } from "./components";
 
 export default function App() {
   return (

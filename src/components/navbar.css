@@ -6,8 +6,8 @@ header{
 a{
     color: #544200;
 }
-a:hover{
-    background-color: #f6b934;
+li a:hover{
+    background-color: #f6b93486;
     font-weight: 30px;
     color: rgb(54, 43, 0);
 }

@@ -5,4 +5,4 @@ import { Navbar } from "./Navbar.jsx";
 import { BlogContent } from "./blog/BlogContent.jsx";
 import { BlogList } from "./blog/BlogList.jsx";
 
-export { Home, BlogPosts, MyBlog, Navbar, BlogContent, BlogList };
+export { Home, BlogPosts, MyBlog, Navbar, BlogList, BlogContent };
