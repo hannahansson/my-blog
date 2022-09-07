@@ -30,7 +30,7 @@
     align-items: center;
     padding: 0.2rem;
 }
-.blog-post p{
+.blog-post .content {
     display: flex;
     justify-content: left;
     padding: 1rem;
@@ -60,4 +60,12 @@
     color: white;
     background-color: #fac85d;;
     cursor: pointer;
+}
+
+.blog-post .date {
+    display: flex;
+    justify-content: start;
+}
+ .date {
+ font-style: italic;
 }

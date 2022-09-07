@@ -14,7 +14,7 @@
     padding: 3rem;
     border-radius: 2rem;
     background: rgb(255,219,125);
-background: linear-gradient(30deg, rgba(255,219,125,0.8911939775910365) 1%, rgba(255,255,255,1) 96%);
+    background: linear-gradient(30deg, rgba(255,219,125,0.8911939775910365) 1%, rgba(255,255,255,1) 96%);
 }
 
 .create-post label{
