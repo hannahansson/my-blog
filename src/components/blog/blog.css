@@ -1,12 +1,12 @@
 *{
     font-family:Verdana, sans-serif;
 }
-.container{
+.container-create{
     margin-bottom: 1rem;
     padding: 1rem;
 }
 .create-post{
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
     text-align: center;
     border: 1.5px solid rgba(235, 199, 131, 0.439);

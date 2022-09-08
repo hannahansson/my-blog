@@ -79,7 +79,7 @@ export const MyBlog = () => {
         </button>
       </div>
       {showPost ? <BlogPosts showPost={true} /> : <div />}
-      <div className="container">
+      <div className="container-create">
         <div className="create-post">
           <h2>Add a new Post </h2>
           <form onSubmit={handleSubmit}>

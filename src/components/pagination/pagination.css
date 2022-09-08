@@ -1,0 +1,11 @@
+.page-link{
+    color: rgb(206, 134, 0);
+    background: rgb(255,219,125);
+    background: linear-gradient(30deg, rgba(255,219,125,0.8911939775910365) 1%, rgba(255,255,255,1) 96%);
+    padding: 0.9rem;
+  border: 1px solid rgb(255, 224, 176);
+}
+.page-link:hover{
+    color: rgb(252, 207, 130);
+    cursor: pointer;
+}
