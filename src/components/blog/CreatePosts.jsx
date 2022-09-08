@@ -97,6 +97,7 @@ export const MyBlog = () => {
               Blog Content:
               <textarea
                 ref={contentRef}
+                required
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
               ></textarea>
