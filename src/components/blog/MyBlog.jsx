@@ -1,9 +1,6 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-import { BlogPosts } from "./BlogPosts";
 import { v4 as uuidv4 } from "uuid";
-import "./MyBlog.css";
-import { BlogList } from "./BlogList";
 import "./blog.css";
 
 const LOCAL_STORAGE_KEY = "myBlog.posts";

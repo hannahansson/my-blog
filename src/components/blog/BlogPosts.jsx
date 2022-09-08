@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { BlogList } from "./BlogList";
 
 const LOCAL_STORAGE_KEY = "myBlog.posts";

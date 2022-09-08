@@ -1,5 +1,4 @@
 import React from "react";
-import { BlogPosts } from "./BlogPosts";
 
 export const BlogContent = ({ post, handleDelete }) => {
   return (
