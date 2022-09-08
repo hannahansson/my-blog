@@ -20,7 +20,6 @@ span{
     padding: 5rem;
     font-style: italic;
     border: 1px solid rgb(250, 217, 155);
-    /*background-color: #ffe6af; #fac85d;*/
     background: rgb(255,219,125);
     background: linear-gradient(30deg, rgba(255,219,125,0.8911939775910365) 1%, rgba(255,255,255,1) 96%);
     letter-spacing: 1px;
@@ -43,15 +42,12 @@ br{
     border: 1px solid rgb(253, 217, 149);
     padding: 1rem;
     margin:  1rem;
-   /* width: 160px;
-    height: 250px;*/
     font-weight: 700;
     font-size: 20px;
     border-radius: 2rem;
     background: rgb(255,219,125);
     background: linear-gradient(30deg, rgba(255,219,125,0.8911939775910365) 1%, rgba(255,255,255,1) 96%);
 }
-
 .posts{
     display: flex;
     flex-wrap: wrap;
@@ -61,8 +57,6 @@ br{
     border: 1px solid rgb(253, 217, 149);
     padding:  1rem;
     margin:  1rem;
-   /* width: 160px;
-    height: 250px;*/
     font-weight: 700;
     font-size: 20px;
     border-radius: 2rem;

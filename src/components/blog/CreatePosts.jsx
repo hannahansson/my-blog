@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect, useRef } from "react";
 import { v4 as uuidv4 } from "uuid";
 import "./blog.css";
+import { BlogPosts } from "./BlogPosts";
 
 const LOCAL_STORAGE_KEY = "myBlog.posts";
 
@@ -12,6 +13,7 @@ export const MyBlog = () => {
   const [date, setDate] = useState(new Date().toLocaleDateString());
 
   const [posts, setPosts] = useState([]);
+  const [showPost, SetShowPost] = useState(false);
 
   const titleRef = useRef();
   const contentRef = useRef();
@@ -29,14 +31,16 @@ export const MyBlog = () => {
 
   const handleSubmit = (e) => {
     //prevents from refreshing the page
-    // e.preventDefault();
+    //e.preventDefault();
 
     const title = titleRef.current.value;
     const content = contentRef.current.value;
     const author = authorRef.current.value;
+    const date = dateRef.current.value;
 
     if (title === "" || content === "" || author === "" || date === "") return;
     console.log(title, content, author, date);
+
     setPosts((prevPosts) => {
       return [
         ...prevPosts,
@@ -61,8 +65,20 @@ export const MyBlog = () => {
     console.log(blog);
     console.log(posts);
   };
+
+  const HandleShowPosts = () => {
+    const showPosts = showPost === false ? true : false;
+    SetShowPost(showPosts);
+  };
+
   return (
     <>
+      <div className="show-posts">
+        <button className="show-posts-btn" onClick={HandleShowPosts}>
+          Show posts
+        </button>
+      </div>
+      {showPost ? <BlogPosts showPost={true} /> : <div />}
       <div className="container">
         <div className="create-post">
           <h2>Add a new Post </h2>

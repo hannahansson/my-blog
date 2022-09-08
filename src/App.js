@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home, BlogPosts, MyBlog, Navbar } from "./components";
+import { Home, BlogPosts, MyBlog, Navbar, UploadImages } from "./components";
 
 export default function App() {
   return (
@@ -16,6 +16,9 @@ export default function App() {
           </Route>
           <Route exact path="/blog/BlogPosts">
             <BlogPosts />
+          </Route>
+          <Route exact path="/imageGallery/UploadImages">
+            <UploadImages />
           </Route>
         </Switch>
       </div>
