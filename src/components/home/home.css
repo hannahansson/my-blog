@@ -64,10 +64,13 @@ br{
     background: linear-gradient(30deg, rgba(255,219,125,0.8911939775910365) 1%, rgba(255,255,255,1) 96%);
 
 }
-.my-blog:hover, .posts:hover{
+.my-blog:hover, .posts:hover {
     opacity: .7;
-    color: orange;
+    color: orange !important;
 }
 div a{
     text-decoration: none !important;
+}
+a{
+    color: rgb(90, 60, 0) !important;
 }
