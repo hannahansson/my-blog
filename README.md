@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# MyBlog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### MyBlog is a blog site that let's you create and read blog posts.
 
-## Available Scripts
 
-In the project directory, you can run:
+#### Home page:
+![Home-page](https://user-images.githubusercontent.com/89410611/189176696-286f46ef-9a95-4839-a31a-8ebc89c30c6e.png)
 
-### `npm start`
+Home page includes a little information about the page and two link buttons. You can navigate through them or via the navbar. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Create Posts:
+![Create-Posts](https://user-images.githubusercontent.com/89410611/189178770-3c5204f3-5c38-42fb-8a79-74f56d4ab484.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Here on *Create Posts* you can write and submit your blog post. You are also able to toggle the button to see all the published blog posts.
 
-### `npm test`
+![TogglePosts](https://user-images.githubusercontent.com/89410611/189179994-f0c68ecd-40f3-4c17-9ba1-25221cb550e4.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*Show Posts* is the toggle button that let's you see the blog posts. You can only see three posts at time then you have to navigate through a pagination. 
+If you don't want to read more you can just push the button again. That's what a toggle button is ;)
 
-### `npm run build`
+![example-create-post](https://user-images.githubusercontent.com/89410611/189181141-3697906e-d10c-4eba-b3a2-c073a833cee4.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The blog form has a title, blog content, date and author input.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Read Posts:
+![Blog-Posts](https://user-images.githubusercontent.com/89410611/189181809-c801c811-f6a0-4a4b-9e97-ccf0c682779c.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Here on *Read Posts* you can read all the blog posts. You can also delete any post you would like by pressing the delete button.  
 
-### `npm run eject`
+![blog-posts-with-pagination](https://user-images.githubusercontent.com/89410611/189182819-dde9094c-54c2-4e8b-80cc-d7d16eef5dcf.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This is what the blog post and the pagination looks like.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The blog posts is saved with local storage.
