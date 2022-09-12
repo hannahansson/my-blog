@@ -6,7 +6,7 @@ import { BlogPosts } from "./BlogPosts";
 
 const LOCAL_STORAGE_KEY = "myBlog.posts";
 
-export const MyBlog = () => {
+export const CreatePosts = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [author, setAuthor] = useState("");
@@ -15,10 +15,7 @@ export const MyBlog = () => {
   const [posts, setPosts] = useState([]);
   const [showPost, SetShowPost] = useState(false);
 
-  const titleRef = useRef();
-  const contentRef = useRef();
   const authorRef = useRef();
-  const dateRef = useRef();
 
   useEffect(() => {
     const storedPosts = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
@@ -31,15 +28,10 @@ export const MyBlog = () => {
 
   const handleSubmit = (e) => {
     //prevents from refreshing the page
-    //e.preventDefault();
+    e.preventDefault();
 
-    const title = titleRef.current.value;
-    const content = contentRef.current.value;
     const author = authorRef.current.value;
-    const date = dateRef.current.value;
-
-    if (title === "" || content === "" || author === "" || date === "") return;
-    console.log(title, content, author, date);
+    if (author === "") return;
 
     setPosts((prevPosts) => {
       return [
@@ -54,16 +46,11 @@ export const MyBlog = () => {
       ].reverse();
     });
 
-    // clears the output with 'null'
-    titleRef.current.value = null;
-    contentRef.current.value = null;
-    authorRef.current.value = null;
-    dateRef.current.value = null;
-
-    const blog = { title, content, author, date };
-
-    console.log(blog);
-    console.log(posts);
+    //clears the output with an empty string/default value
+    setTitle("");
+    setContent("");
+    setDate(new Date().toLocaleDateString());
+    setAuthor("");
   };
 
   const HandleShowPosts = () => {
@@ -86,7 +73,6 @@ export const MyBlog = () => {
             <label>
               Blog title:
               <input
-                ref={titleRef}
                 type="text"
                 required
                 value={title}
@@ -96,7 +82,6 @@ export const MyBlog = () => {
             <label>
               Blog Content:
               <textarea
-                ref={contentRef}
                 required
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
@@ -107,7 +92,6 @@ export const MyBlog = () => {
               <input
                 type="date"
                 name="date"
-                ref={dateRef}
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
               ></input>

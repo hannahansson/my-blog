@@ -14,13 +14,10 @@ export const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/blog/MyBlog">Create Posts</Link>
+              <Link to="/blog/CreatePosts">Create Posts</Link>
             </li>
             <li>
               <Link to="/blog/BlogPosts">Blog Posts</Link>
-            </li>
-            <li>
-              <Link to="/imageGallery/UploadImages">Upload Images</Link>
             </li>
           </ul>
         </nav>

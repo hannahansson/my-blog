@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home, BlogPosts, MyBlog, Navbar, UploadImages } from "./components";
+import { Home, BlogPosts, CreatePosts, Navbar } from "./components";
 
 export default function App() {
   return (
@@ -10,14 +10,11 @@ export default function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/blog/MyBlog">
-            <MyBlog />
+          <Route exact path="/blog/CreatePosts">
+            <CreatePosts />
           </Route>
           <Route exact path="/blog/BlogPosts">
             <BlogPosts />
-          </Route>
-          <Route exact path="/imageGallery/UploadImages">
-            <UploadImages />
           </Route>
         </Switch>
       </div>
