@@ -4,16 +4,16 @@
 
 
 #### Home page:
-![Home-page](https://user-images.githubusercontent.com/89410611/189176696-286f46ef-9a95-4839-a31a-8ebc89c30c6e.png)
+![home-page-1](https://user-images.githubusercontent.com/89410611/189605748-466e07f0-4a6d-458b-8a3b-f3c4b2ed94a5.png)
 
 Home page includes a little information about the page and two link buttons. You can navigate through them or via the navbar. 
 
 #### Create Posts:
-![Create-Posts](https://user-images.githubusercontent.com/89410611/189178770-3c5204f3-5c38-42fb-8a79-74f56d4ab484.png)
+![createPosts](https://user-images.githubusercontent.com/89410611/189605998-bfc11d83-8429-49d1-a425-71cc91701a61.png)
 
 Here on *Create Posts* you can write and submit your blog post. You are also able to toggle the button to see all the published blog posts.
 
-![TogglePosts](https://user-images.githubusercontent.com/89410611/189179994-f0c68ecd-40f3-4c17-9ba1-25221cb550e4.png)
+![image](https://user-images.githubusercontent.com/89410611/189606322-5d4d0a8a-81dd-402a-ae89-903cc891c6ee.png)
 
 *Show Posts* is the toggle button that let's you see the blog posts. You can only see three posts at time then you have to navigate through a pagination. 
 If you don't want to read more you can just push the button again. That's what a toggle button is ;)
@@ -23,7 +23,7 @@ If you don't want to read more you can just push the button again. That's what a
 The blog form has a title, blog content, date and author input.
 
 #### Read Posts:
-![Blog-Posts](https://user-images.githubusercontent.com/89410611/189181809-c801c811-f6a0-4a4b-9e97-ccf0c682779c.png)
+![readPosts](https://user-images.githubusercontent.com/89410611/189606133-524176d2-601e-4f45-94ab-8ac3da078d4c.png)
 
 Here on *Read Posts* you can read all the blog posts. You can also delete any post you would like by pressing the delete button.  
 
