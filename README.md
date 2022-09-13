@@ -21,6 +21,7 @@ If you don't want to read more you can just press the button again. That's what 
 ![image](https://user-images.githubusercontent.com/89410611/189914673-f28b60f5-d7ad-4b2e-a96f-6cfcd1ba57c8.png)
 
 The blog form has a title, blog content, date and author input.
+When submitting the form it redirects you to the ”Blog Posts” page using **useHistory**.
 
 #### Read Posts:
 ![readPosts](https://user-images.githubusercontent.com/89410611/189606133-524176d2-601e-4f45-94ab-8ac3da078d4c.png)
