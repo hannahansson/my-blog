@@ -9,16 +9,16 @@
 Home page includes a little information about the page and two link buttons. You can navigate through them or via the navbar. 
 
 #### Create Posts:
-![createPosts](https://user-images.githubusercontent.com/89410611/189605998-bfc11d83-8429-49d1-a425-71cc91701a61.png)
+![create-posts](https://user-images.githubusercontent.com/89410611/189913779-5969f3e1-37d4-4f37-a785-025bc54e7be0.png)
 
-Here on *Create Posts* you can write and submit your blog post. You are also able to toggle the button to see all the published blog posts.
+Here on *Create Posts* you can write and submit your blog post. You are also able to toggle the *Show posts* button to see all the published blog posts.
 
-![image](https://user-images.githubusercontent.com/89410611/189606322-5d4d0a8a-81dd-402a-ae89-903cc891c6ee.png)
+![close-show-post](https://user-images.githubusercontent.com/89410611/189914117-e61926a6-b48c-4747-8a90-a2471d0cca79.png)
 
 *Show Posts* is the toggle button that let's you see the blog posts. You can only see three posts at time then you have to navigate through a pagination. 
-If you don't want to read more you can just push the button again. That's what a toggle button is ;)
+If you don't want to read more you can just press the button again. That's what a toggle button is ;)
 
-![example-create-post](https://user-images.githubusercontent.com/89410611/189181141-3697906e-d10c-4eba-b3a2-c073a833cee4.png)
+![image](https://user-images.githubusercontent.com/89410611/189914673-f28b60f5-d7ad-4b2e-a96f-6cfcd1ba57c8.png)
 
 The blog form has a title, blog content, date and author input.
 
