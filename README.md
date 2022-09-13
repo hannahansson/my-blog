@@ -1,4 +1,4 @@
-# MyBlog
+# MyBlog - React Inlämning 1 
 
 ### MyBlog is a blog site that let's you create and read blog posts.
 
@@ -31,4 +31,10 @@ Here on *Read Posts* you can read all the blog posts. You can also delete any po
 
 This is what the blog post and the pagination looks like.
 
-The blog posts is saved with local storage.
+The blog posts is saved with local storage. Saved with local storage means that you can refresh the page without losing your data/blog posts.
+
+# How to get started:
+1. Clone this repo
+2. Open up in VS Code and then write ***npm start*** in the terminal (make sure it's live on "http://localhost:3000/")
+3. Now you are live and can navigate around on MyBlog.
+4. If you would like to cancel the live-hosting, just write ***Ctrl C*** in the node terminal.
