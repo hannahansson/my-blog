@@ -1,4 +1,4 @@
-# MyBlog
+# MyBlog - React Inlämning 1 
 
 ### MyBlog is a blog site that let's you create and read blog posts.
 
