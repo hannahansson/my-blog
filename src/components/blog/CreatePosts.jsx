@@ -1,5 +1,7 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
+import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
+import { useHistory } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import "./blog.css";
 import { BlogPosts } from "./BlogPosts";
@@ -17,6 +19,8 @@ export const CreatePosts = () => {
 
   const authorRef = useRef();
 
+  let history = useHistory();
+
   useEffect(() => {
     const storedPosts = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
     if (storedPosts) setPosts(storedPosts);
@@ -26,14 +30,14 @@ export const CreatePosts = () => {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(posts));
   }, [posts]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     //prevents from refreshing the page
     e.preventDefault();
 
     const author = authorRef.current.value;
     if (author === "") return;
 
-    setPosts((prevPosts) => {
+    await setPosts((prevPosts) => {
       return [
         ...prevPosts,
         {
@@ -51,6 +55,8 @@ export const CreatePosts = () => {
     setContent("");
     setDate(new Date().toLocaleDateString());
     setAuthor("");
+
+    history.push("/blog/BlogPosts");
   };
 
   const HandleShowPosts = () => {
@@ -61,9 +67,16 @@ export const CreatePosts = () => {
   return (
     <>
       <div className="show-posts">
-        <button className="show-posts-btn" onClick={HandleShowPosts}>
-          Show posts
-        </button>
+        {showPost ? (
+          <button className="show-posts-btn" onClick={HandleShowPosts}>
+            <TiArrowSortedUp />
+            Close posts
+          </button>
+        ) : (
+          <button className="show-posts-btn" onClick={HandleShowPosts}>
+            Show posts <TiArrowSortedDown />
+          </button>
+        )}{" "}
       </div>
       {showPost ? <BlogPosts showPost={true} /> : <div />}
       <div className="container-create">
