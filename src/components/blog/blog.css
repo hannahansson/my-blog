@@ -54,9 +54,12 @@
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem;
-    cursor: pointer;
     font-size: 1rem;
     border: 2px solid rgb(249, 228, 182);
+}
+.create-post button:hover{
+    opacity: .8;
+    cursor: pointer;
 }
 .container-blog{
     display: flex;
@@ -113,7 +116,10 @@
     outline: none;
     border: 1px solid rgb(254, 235, 196) ;
     color: white;
-    background-color: #fac85d;;
+    background-color: #fac85d;
+}
+.del-button:hover{
+    background-color: rgb(243, 134, 0);
     cursor: pointer;
 }
 .blog-post .date {

@@ -33,11 +33,8 @@ export const BlogPosts = () => {
 
   return (
     <div>
-      <BlogList
-        posts={currentPosts}
-        handleDelete={handleDelete}
-        setPosts={[setPosts]}
-      />
+      <BlogList posts={currentPosts} handleDelete={handleDelete} />
+
       <Pagination
         postPerPage={postPerPage}
         totalPosts={posts.length}

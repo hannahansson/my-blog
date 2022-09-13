@@ -6,7 +6,10 @@ export const Navbar = () => {
   return (
     <header>
       <div className="container-nav">
-        <h1 className="logo">MyBlog</h1>
+        <Link to="/">
+          {" "}
+          <h1 className="logo">MyBlog</h1>
+        </Link>
         <nav>
           <ul>
             <li>
