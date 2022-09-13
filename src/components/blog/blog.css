@@ -100,14 +100,14 @@
 .blog-post .author{
     font-size: 13px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin: 0.7rem ;
     padding: 0.7rem;
 }
 
 .blog-post .delete{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .del-button{
     padding: 1rem;
@@ -124,7 +124,7 @@
 }
 .blog-post .date {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
  .date {
  font-style: italic;

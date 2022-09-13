@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
 import { useHistory } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
