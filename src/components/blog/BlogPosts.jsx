@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BlogList } from "./BlogList";
 import { Pagination } from "../pagination/Pagination";
+import { Link } from "react-router-dom";
 
 const LOCAL_STORAGE_KEY = "myBlog.posts";
 
@@ -33,7 +34,18 @@ export const BlogPosts = () => {
 
   return (
     <div>
-      <BlogList posts={currentPosts} handleDelete={handleDelete} />
+      {posts.length ? (
+        <BlogList posts={currentPosts} handleDelete={handleDelete} />
+      ) : (
+        <div>
+          <h1>There are no blog posts yet...</h1>
+          <Link to="/blog/CreatePosts">
+            <div className="no-posts">
+              <button className="show-posts-btn">Write a post</button>
+            </div>
+          </Link>
+        </div>
+      )}
 
       <Pagination
         postPerPage={postPerPage}
