@@ -28,6 +28,10 @@ When submitting the form it redirects you to the ”Blog Posts” page using **u
 
 Here on *Read Posts* you can read all the blog posts. You can also delete any post you would like by pressing the delete button.  
 
+![noPosts](https://user-images.githubusercontent.com/89410611/190176770-6635cb43-abd2-4752-a003-68090614ec73.png)
+
+If there are no blog posts, this text and link button will appear.
+
 ![blog-posts-with-pagination](https://user-images.githubusercontent.com/89410611/189182819-dde9094c-54c2-4e8b-80cc-d7d16eef5dcf.png)
 
 This is what the blog post and the pagination looks like.
